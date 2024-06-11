@@ -25,7 +25,6 @@ int main(int argc, char* argv[]) {
 		std::error_code ignored_error;
 		asio::write(socket, asio::buffer(message), ignored_error); 
 	}
-
 	} catch (std::exception& e) {
 		std::cerr << e.what() << std::endl;
 	}
